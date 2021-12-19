@@ -46,6 +46,9 @@ public sealed class PersonnelDepartment
 
     private KeyValuePair<Worker, List<Affair>>? Find(Worker worker)
     {
+        if (worker == null)
+            throw new NullReferenceException(nameof(worker));
+        
         foreach (var entity in _database.Entities)
         {
             if (entity.Key == worker)
