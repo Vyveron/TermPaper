@@ -3,4 +3,18 @@
   &lt;Assembly Path="D:\Devenv\Projects\Labs\TermPaper\Libraries\Database.dll" /&gt;&#xD;
   &lt;Assembly Path="D:\Devenv\Projects\Labs\TermPaper\Libraries\Serialization.dll" /&gt;&#xD;
   &lt;Assembly Path="C:\Users\Vyveron\.dotnet\shared\Microsoft.NETCore.App\5.0.6\System.IO.FileSystem.dll" /&gt;&#xD;
-&lt;/AssemblyExplorer&gt;</s:String></wpf:ResourceDictionary>
+&lt;/AssemblyExplorer&gt;</s:String>
+	<s:String x:Key="/Default/Environment/Highlighting/HighlightingSourceSnapshotLocation/@EntryValue">C:\Users\Vyveron\AppData\Local\JetBrains\Rider2021.3\resharper-host\temp\Rider\vAny\CoverageData\_TermPaper.-707421018\Snapshot\snapshot.utdcvr</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=01f62d21_002Dfd1a_002D4da7_002Dbe2d_002D948e64538e91/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Test1" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;ProjectFile&gt;994B629E-A442-4427-83A8-EC6278D62A74/f:UnitTest1.cs&lt;/ProjectFile&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=1ba23d80_002D3d2a_002D4adc_002D9db6_002Df0f05066f85f/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Tests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::994B629E-A442-4427-83A8-EC6278D62A74::net6.0::UnitTests.Tests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=9affae0f_002D831a_002D48f4_002D8467_002Dd81da3bdda36/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="SerializeTest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::994B629E-A442-4427-83A8-EC6278D62A74::net6.0::UnitTests.DatabaseTest.SerializeTest&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
