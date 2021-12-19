@@ -32,10 +32,15 @@ public sealed class PersonnelDepartment
     {
         var entity = Find(worker);
 
-        if (entity == null)
-            throw new ArgumentException("No such worker", nameof(worker));
+        entity.Value.Add(new(affair));
+    }
 
-        entity.Value.Value.Add(new(affair));
+    public void RemoveAffair(Worker worker, string affair)
+    {
+        var (_, affairList) = Find(worker);
+        var affairInstance = affairList.Find(x => x.Name == affair);
+
+        affairList.Remove(affairInstance);
     }
 
     public void Save() => _database.SerializeAndSave();
@@ -44,17 +49,17 @@ public sealed class PersonnelDepartment
 
     public void Wipe() => _database.Wipe();
 
-    private KeyValuePair<Worker, List<Affair>>? Find(Worker worker)
+    private KeyValuePair<Worker, List<Affair>> Find(Worker worker)
     {
         if (worker == null)
             throw new NullReferenceException(nameof(worker));
-        
+
         foreach (var entity in _database.Entities)
         {
             if (entity.Key == worker)
                 return entity;
         }
 
-        return null;
+        throw new ArgumentException("No such worker", nameof(worker));
     }
 }
