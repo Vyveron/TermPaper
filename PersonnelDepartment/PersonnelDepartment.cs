@@ -40,7 +40,10 @@ public sealed class PersonnelDepartment
         var (_, affairList) = Find(worker);
         var affairInstance = affairList.Find(x => x.Name == affair);
 
-        affairList.Remove(affairInstance);
+        if (affairInstance != null)
+            affairList.Remove(affairInstance);
+
+        throw new ArgumentException("No such affair", nameof(affair));
     }
 
     public void Save() => _database.SerializeAndSave();
