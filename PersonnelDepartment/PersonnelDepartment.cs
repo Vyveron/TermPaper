@@ -22,10 +22,7 @@ public sealed class PersonnelDepartment
     {
         var entity = Find(worker);
 
-        if (entity == null)
-            return;
-
-        _database.Remove(entity.Value);
+        _database.Remove(entity);
     }
 
     public void AddAffair(Worker worker, string affair)
